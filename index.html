@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://m.media-amazon.com/images/G/01/wg/assets/fonts/AmazonEmber_W_Bd.woff2">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div id="logo">
+<img src="https://larrybrownsports.com/wp-content/uploads/2021/02/amazon-logo.jpg" alt="">
+</div>
+</div>
+    <div class="container">
+    <div id="bordaform">
+    <h2>Criar conta</h2>
+
+    <div id="local">
+        <div class=" endereco" id="texto">
+            <h4 style="margin: 0%;margin-bottom: 4px;">Nome</h4>
+            <form action="get" >
+                <input id="formname" placeholder="Digite seu nome" type="" maxlength="50" minlength="10"  autofocus autocomplete="name" name="customerName" required  >
+            </form>
+        </div>
+    
+        <div class=" logradoro" id="texto">
+            <h4 style="margin: 0%;margin-bottom: 4px;">Idade</h4>
+            <form action="get">
+                <input id="formidade" placeholder="Idade" type="number" min="14" max="150" required >
+            </form>
+        </div>
+    </div>
+
+    <div class="textform endereco" id="texto">
+        <h4 style="margin: 0%;margin-bottom: 4px;">Data de nascimento</h4>
+        <form action="get">
+            <input id="formulario" placeholder="Nome e sobrenome" type="date" required >
+        </form>
+    </div>
+
+    <div id="local" >
+
+        <div class=" logradoro" style="margin-left: 0%;" id="texto">
+            <h4 style="margin: 0%;margin-bottom: 4px;">Sexo</h4>
+            <form action="get">
+            <select id="formsexo" placeholder="sexo" type="text"  name="Sexo" required>
+                <option value=""></option>
+                <option value="">Masculino</option>
+                <option value="">Feminino</option>
+                <option value="">Prefere não falar</option>
+            </select>
+            </form>
+        </div>
+        
+        <div class=" logradoro" id="texto">
+            <h4 style="margin: 0%;margin-bottom: 4px;">CPF</h4>
+            <form action="get">
+                <input  oninput="mascara(this)" placeholder="CPF" type="text"  required maxlength="11" style="height: 35px; width:100px ;" >
+            </form>
+        </div>
+
+        <div class=" logradoro" id="texto">
+            <h4 style="margin: 0%;margin-bottom: 4px;">Cidade</h4>
+            <form action="get">
+                <select name="estado" id="formcidade" required> 
+                    <option value="estado">Selecione o Estado</option> 
+                    <option value="ac">Acre</option> 
+                    <option value="al">Alagoas</option> 
+                    <option value="am">Amazonas</option> 
+                    <option value="ap">Amapá</option> 
+                    <option value="ba">Bahia</option> 
+                    <option value="ce">Ceará</option> 
+                    <option value="df">Distrito Federal</option> 
+                    <option value="es">Espírito Santo</option> 
+                    <option value="go">Goiás</option> 
+                    <option value="ma">Maranhão</option> 
+                    <option value="mt">Mato Grosso</option> 
+                    <option value="ms">Mato Grosso do Sul</option> 
+                    <option value="mg">Minas Gerais</option> 
+                    <option value="pa">Pará</option> 
+                    <option value="pb">Paraíba</option> 
+                    <option value="pr">Paraná</option> 
+                    <option value="pe">Pernambuco</option> 
+                    <option value="pi">Piauí</option> 
+                    <option value="rj">Rio de Janeiro</option> 
+                    <option value="rn">Rio Grande do Norte</option> 
+                    <option value="ro">Rondônia</option> 
+                    <option value="rs">Rio Grande do Sul</option> 
+                    <option value="rr">Roraima</option> 
+                    <option value="sc">Santa Catarina</option> 
+                    <option value="se">Sergipe</option> 
+                    <option value="sp">São Paulo</option> 
+                    <option value="to">Tocantins</option> 
+                </select>
+            </form>
+        </div>
+    </div>
+    
+    <div id="local">
+    <div class=" endereco" id="texto">
+        <h4 style="margin: 0%;margin-bottom: 4px;">Endereço</h4>
+        <form action="get">
+            <input id="formlocal" placeholder="Endereço" type="text" required >
+        </form>
+    </div>
+
+    <div class=" logradoro" id="texto">
+        <h4 style="margin: 0%;margin-bottom: 4px;">Logradoro</h4>
+        <form action="get">
+            <input id="formlogradora" placeholder="Logradouro" type="number" required >
+        </form>
+    </div>
+</div>
+
+    <div class="textform" id="texto" >
+        <h4 style="margin: 0%;margin-bottom: 4px;">Número de celular ou e-mail</h4>
+        <form action="get">
+            <input id="formulario"  type="email tel"  placeholder="Número ou e-mail" required maxlength="50" min="5"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+        </form>
+    </div>
+
+
+    <div class="textform" id="texto" >
+        <h4 style="margin: 0%;margin-bottom: 4px;">Senha</h4>
+        <form action="get">
+            <input id="formulario" placeholder="Digite a senha"  type="password" required maxlength="50">
+        </form>
+    </div>
+    <div class="textform" id="texto" >
+        <h4 style="margin: 0%;margin-bottom: 4px;">Senha</h4>
+        <form action="get">
+            <input id="formulario" placeholder="Confirme a senha" type="password" required maxlength="50">
+        </form>
+    </div>
+    <div id="enviar">
+    <input type="submit">
+    </div>
+    <div #diretrizes>
+    <p id="diretrizes" style="font-size: 13px; padding-left: 5px;">
+    Ao criar uma conta, você concorda com as <a href="">Condições de Uso</a>  da Amazon. Por favor verifique a <a href="">Notificação de Privacidade, Notificação de Cookies</a>  e a <a href="">Notificação de Anúncios Baseados em Interesse</a>.
+    </p>
+    </div>
+    <div class="line">
+
+    </div>
+    <div id="diretrizes">  
+    <p>Você já tem uma conta? <a href="/ap/signin?openid.pape.max_auth_age=0&amp;openid.return_to=https%3A%2F%2Fwww.amazon.com.br%2F%3F_encoding%3DUTF8%26adgrpid%3D1141293728081284%26hvadid%3D71330944898460%26hvbmt%3Dbe%26hvdev%3Dc%26hvlocint%3D%26hvlocphy%3D147073%26hvnetw%3Do%26hvqmt%3De%26hvtargid%3Dkwd-71331371436168%253Aloc-20%26hydadcr%3D26346_10554306%26ref%3Dpd_sl_7to86bd2ph_e%26tag%3Dmsndesktopabk-20%26ref_%3Dnav_custrec_newcust&amp;prevRID=3YCSBBBNXYKTT1J2HAAP&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.assoc_handle=brflex&amp;openid.mode=checkid_setup&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=brflex&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"> Fazer login </a> </p>
+    </div>
+    </div>
+
+</body>
+
+<script>
+function mascara(i){
+   
+   var v = i.value;
+   
+   if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+      i.value = v.substring(0, v.length-1);
+      return;
+   }
+   
+   i.setAttribute("maxlength", "14");
+   if (v.length == 3 || v.length == 7) i.value += ".";
+   if (v.length == 11) i.value += "-";
+
+}
+</script>
+
+</html>

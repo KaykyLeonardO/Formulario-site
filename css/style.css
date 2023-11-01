@@ -1,0 +1,178 @@
+html {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(41, 53, 73);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#logo img {
+    height: 75px;
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+#bordaform {
+    width: 350px;
+    height: 780px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#bordaform h2 {
+    display: flex;
+    margin-top: 15px;
+}
+
+.endereco h4 {
+    display: flex;
+}
+
+#bordaform {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: nowrap ;
+    flex-direction: column ;
+    justify-content: flex-start ;
+
+}
+
+input:required:hover {
+    border: 1px solid red;
+}
+
+    .textform   {
+        display: flex;
+        flex-wrap: nowrap ;
+        flex-direction: column ;
+        justify-content: flex-start ;
+        }
+
+        #texto {
+            margin-top: 15px;
+        }
+
+        #formulario {
+            width: 328px;
+            height: 35px;
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+        }
+
+        #formname {
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+            width: 265px;
+            height: 35px;
+            display: flex;
+        }
+
+        #formidade {
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+            width: 50px;
+            height: 35px;
+            display: flex;
+        }
+
+#formsexo {
+border: 1px  solid rgb(158, 154, 154);
+border-radius: 4px ;
+width: 80px;
+height: 40px;
+display: flex;
+}
+
+        #formcpf  {
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+            width: 100px;
+            height: 55px;
+            display: flex;
+        }
+
+        #formcidade  {
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+            width: 125px;
+            height: 35px;
+            display: flex;
+        }
+
+        #formlocal  {
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+            width: 230px;
+            height: 35px;
+            display: flex;
+        }
+
+        #formlogradora  {
+            border: 1px  solid rgb(158, 154, 154);
+            border-radius: 4px ;
+            width: 80px;
+            height: 35px;
+            display: flex;
+        }
+
+        .logradoro {
+            margin-left: 10px;
+        }
+
+        #local {
+            display: flex ;
+        }
+
+        #enviar {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 15px;
+        }
+
+        #enviar input {
+            height: 35px; 
+            border: 1px solid rgb(255, 221, 0); 
+            border-radius: 8px;
+            background-color: rgb(255, 220, 0);
+        }
+
+        #diretrizes {
+            
+            font-size: 13px; 
+            padding-left: 5px;
+        }
+
+        #diretrizes a {
+            color: rgb(50, 50, 225);
+            text-decoration: none;
+        }
+
+        .line::after {
+            content: "";
+            display: flex;
+            width: auto;
+            height: 2px;
+            background-color: gray;
+            margin-top: 3px;
+            flex-direction: column;
+        }
+
+
